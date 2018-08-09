@@ -1,0 +1,3 @@
+# sample command to pull logs locally and format in json
+
+gcloud logging read 'logName="projects/audit-testing/logs/cloudaudit.googleapis.com%2Factivity" AND protoPayload.authorizationInfo.granted="true"' --freshness 10d
